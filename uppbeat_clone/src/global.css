@@ -13,3 +13,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+@layer components {
+  .qwik-sidebar-item-component {
+    @apply flex cursor-pointer flex-wrap gap-5 align-middle font-medium opacity-70 duration-75 ease-in;
+  }
+
+  .qwik-button-primary {
+    @apply flex h-[40px] w-max min-w-[50px] content-center items-center justify-center gap-1 rounded-3xl bg-pink-600 p-2 px-3 text-sm text-white hover:bg-pink-800;
+  }
+
+  .qwik-button-default {
+    @apply flex h-[40px] w-max content-center items-center justify-center gap-1 rounded-3xl bg-gray-200 p-2 px-3 text-sm text-gray-900 hover:bg-gray-800 hover:text-white;
+  }
+
+  .qwik-input-src {
+    @apply relative flex h-[44px] w-[370px] justify-between gap-2 rounded-xl bg-gray-100 px-3 text-xs text-slate-900;
+  }
+
+  .qwik-avatar {
+    @apply hover: block cursor-pointer rounded-full border-2 border-gray-300 bg-slate-700 object-cover contrast-50;
+  }
+}

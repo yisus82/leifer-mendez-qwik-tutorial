@@ -1,19 +1,26 @@
 import { component$ } from '@builder.io/qwik';
+import SidebarItem from '../sidebar-item';
+
+
+export const Separator = () => (
+  <>
+    <hr />
+  </>
+);
 
 export default component$(() => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href='/home'>Home</a>
-        </li>
-        <li>
-          <a href='/history'>History</a>
-        </li>
-        <li>
-          <a href='/trending'>Trending</a>
-        </li>
-      </ul>
-    </nav>
+    <div class='text-gray-900'>
+      <div class='flex-col gap-6 p-6 flex border-gray-200 border-b'>
+        <SidebarItem name='Music' route='/' icon='uil-music' />
+        <SidebarItem name='Sound Effect' route='/sfx' icon='uil-graph-bar' />
+        <SidebarItem name='Trending' route='/trending' icon='uil-chart-line' />
+      </div>
+      <div class='flex-col gap-6 p-6 flex '>
+        <SidebarItem name='My Favorites' route='/favorites' icon='uil-heart' />
+        <SidebarItem name='My Playlist' route='/playlist' icon='uil-book-alt' />
+        <SidebarItem name='Download history' route='/history' icon='uil-history' />
+      </div>
+    </div>
   );
 });
