@@ -36,8 +36,8 @@ body {
     @apply flex h-[40px] w-max content-center items-center justify-center gap-1 rounded-3xl bg-gray-200 p-2 px-3 text-sm text-gray-900 hover:bg-gray-800 hover:text-white;
   }
 
-  .qwik-input-src {
-    @apply relative flex h-[44px] w-[370px] justify-between gap-2 rounded-xl bg-gray-100 px-3 text-xs text-slate-900;
+  .qwik-search-input {
+    @apply relative flex h-[60px] w-[370px] justify-between gap-2 rounded-xl bg-gray-100 px-3 text-xs text-slate-900;
   }
 
   .qwik-avatar {

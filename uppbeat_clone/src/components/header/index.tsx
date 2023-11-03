@@ -1,13 +1,14 @@
 import { component$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
-import { Avatar } from '../avatar';
+import Avatar from '../avatar';
 import Button from '../button';
+import InputSrc from '../search-input';
 
 export default component$(() => {
   return (
     <header class='h-[76px] p-5 pt-4 flex'>
       <div class='w-full flex'>
-        <span>InputSrc</span>
+        <InputSrc />
       </div>
       <div class='flex gap-2'>
         <div class='flex gap-2'>

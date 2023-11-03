@@ -6,8 +6,7 @@ export interface AvatarProps {
   alt: string;
 }
 
-export const Avatar = component$(({ src, alt }: AvatarProps) => {
-  console.log(GenericAvatar)
+export default component$(({ src, alt }: AvatarProps) => {
   return (
     <div class='w-[40px] h-[40px]'>
       <img class='qwik-avatar'
