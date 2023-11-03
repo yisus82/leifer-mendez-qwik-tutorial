@@ -24,10 +24,8 @@ export default component$(
 
     return (
       <div onClick$={moveToPage} class='qwik-sidebar-item-component'>
-        <i class={`uil ${icon}`} />
-        <span class='text-sm'>
-          {name}
-        </span>
+        {icon ? <i class={`uil ${icon}`} /> : null}
+        {name ? <span class='text-sm'>{name}</span> : null}
       </div>
     );
   }
