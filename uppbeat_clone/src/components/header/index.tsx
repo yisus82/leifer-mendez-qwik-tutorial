@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
+import { Avatar } from '../avatar';
 import Button from '../button';
 
 export default component$(() => {
@@ -15,7 +16,7 @@ export default component$(() => {
         </div>
         <div class='flex gap-2'>
           <Link href='/auth/login'>
-            <span>Avatar</span>
+            <Avatar alt='Generic avatar' />
           </Link>
         </div>
       </div>

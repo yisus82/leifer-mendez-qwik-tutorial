@@ -41,6 +41,6 @@ body {
   }
 
   .qwik-avatar {
-    @apply hover: block cursor-pointer rounded-full border-2 border-gray-300 bg-slate-700 object-cover contrast-50;
+    @apply cursor-pointer rounded-full border-2 border-gray-300 bg-slate-700 object-cover contrast-50 hover:block;
   }
 }
