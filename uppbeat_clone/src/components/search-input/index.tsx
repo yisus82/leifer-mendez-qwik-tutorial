@@ -29,9 +29,11 @@ export const InputList = component$(() => {
 export default component$(() => {
   const canSearch = useSignal(false);
 
-  const handleDropList = $((event: QwikMouseEvent<HTMLDivElement>) => {
-    const id = (event.target as HTMLDivElement).id;
-    if (id !== 'search-input') {
+  const handleDropList = $((event: QwikMouseEvent<HTMLElement>) => {
+    const id = (event.target as HTMLElement).id;
+    if (id === 'search-input' || id === 'search-button' || id === 'search-icon') {
+      canSearch.value = true;
+    } else {
       canSearch.value = false;
     }
   });
@@ -40,7 +42,6 @@ export default component$(() => {
     <div window:onClick$={handleDropList} class={{'drop-shadow-lg': canSearch.value}}>
       <div class={{'qwik-search-input': true}}>
         <input
-          onClick$={() => (canSearch.value = true)}
           class='bg-transparent w-full'
           id='search-input'
           placeholder='Search tracks, artists, styles or sound effects'
@@ -49,9 +50,9 @@ export default component$(() => {
         <div class='flex justify-center content-center items-center'>
           <button
             class='bg-slate-800 rounded-lg w-2 h-2 flex justify-center content-center items-center'
-            onClick$={() => (canSearch.value = true)}
+            id='search-button'
           >
-            <i class='text-white uil uil-search' />
+            <i class='text-white uil uil-search' id='search-icon' />
           </button>
         </div>
       </div>
