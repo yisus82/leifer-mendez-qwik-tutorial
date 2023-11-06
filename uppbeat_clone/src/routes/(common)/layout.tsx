@@ -1,9 +1,14 @@
-import { Slot, component$ } from '@builder.io/qwik';
+import { Slot, component$, useContextProvider, useStore } from '@builder.io/qwik';
 import Header from '~/components/header';
 import Logo from '~/components/logo';
 import Sidebar from '~/components/sidebar';
+import PlayerContext from '~/context/player-ctx';
 
 export default component$(() => {
+  const statePlayer = useStore({src:'', play:false})
+
+  useContextProvider(PlayerContext, statePlayer)
+
   return (
     <div class='h-[100vh] flex'>
     <div class='w-[256px] fixed '>
