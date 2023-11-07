@@ -5,7 +5,7 @@ import PlayList from '~/components/play-list';
 
 export default component$(() => {
   return <>
-    <HeadInfo title="Keep creating, keep inspiring 👌" />
+    <HeadInfo title='Keep creating, keep inspiring 👌' />
     <PlayList />
   </>;
 });

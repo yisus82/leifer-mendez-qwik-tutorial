@@ -12,8 +12,8 @@ export default component$(() => {
       </div>
       <div class='flex gap-2'>
         <div class='flex gap-2'>
-          <Button label="Pricing" color="default" />
-          <Button label="Go Premiun" icon="uil-star" color="primary" />
+          <Button label='Pricing' color='default' />
+          <Button label='Go Premiun' icon='uil-star' color='primary' />
         </div>
         <div class='flex gap-2'>
           <Link href='/auth/login'>

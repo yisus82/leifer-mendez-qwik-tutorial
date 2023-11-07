@@ -15,7 +15,7 @@ export default component$(() => {
       <link rel='canonical' href={loc.url.href} />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+      <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.8/css/line.css' />
 
       {head.meta.map(m => (
         <meta key={m.key} {...m} />

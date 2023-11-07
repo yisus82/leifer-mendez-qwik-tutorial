@@ -18,9 +18,9 @@ const Button = component$((props: {handlePlay: any, statePlay: {value: boolean}}
       onClick$={props.handlePlay}
     >
       {props.statePlay.value ? (
-        <i class="uil uil-pause"></i>
+        <i class='uil uil-pause'></i>
       ) : (
-        <i class="uil uil-play"></i>
+        <i class='uil uil-play'></i>
       )}
     </button>
   );

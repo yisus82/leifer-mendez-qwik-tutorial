@@ -5,7 +5,7 @@ import Logo from '~/assets/images/logo.svg';
 export default component$(() => {
   return (
     <Link href='/'>
-      <img src={Logo} width="200" height="150" alt="Uppbeat logo"/>
+      <img src={Logo} width='200' height='150' alt='Uppbeat logo'/>
     </Link>
   );
 });
