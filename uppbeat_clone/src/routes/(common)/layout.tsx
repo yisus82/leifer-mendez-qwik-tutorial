@@ -1,4 +1,5 @@
 import { Slot, component$, useContextProvider, useStore } from '@builder.io/qwik';
+import FooterPlayer from '~/components/footer-player';
 import Header from '~/components/header';
 import Logo from '~/components/logo';
 import Sidebar from '~/components/sidebar';
@@ -25,6 +26,7 @@ export default component$(() => {
       <Header />
       <Slot />
     </div>
+    <FooterPlayer />
   </div>
   );
 });
