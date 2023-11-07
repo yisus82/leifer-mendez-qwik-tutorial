@@ -25,7 +25,7 @@ export default component$(() => {
   });
 
   return (
-    <div class='h-full w-full flex justify-center content-center items-center'>
+    <div class='h-screen w-full flex justify-center content-center items-center'>
       <form preventdefault:submit onSubmit$={signIn}>
         <div class='grid gap-3 p-3'>
           <input
