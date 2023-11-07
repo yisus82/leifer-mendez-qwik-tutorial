@@ -34,7 +34,7 @@ export default component$(() => {
   const statePlay = useSignal<boolean>(false);
 
   useTask$(({track})=> {
-    track(() => state.src)
+    track(() => state.src);
     if(state.src){
       if (playerWave) {
         playerWave.wave?.load(state.src);
@@ -66,11 +66,13 @@ export default component$(() => {
   });
 
   const handlePlay = $(() => {
-    statePlay.value = !statePlay.value;
-    if (statePlay.value) {
-      playerWave.wave?.play();
-    } else {
-      playerWave.wave?.pause();
+    if (state.src) {
+      statePlay.value = !statePlay.value;
+      if (statePlay.value) {
+        playerWave.wave?.play();
+      } else {
+        playerWave.wave?.pause();
+      }
     }
   });
 
