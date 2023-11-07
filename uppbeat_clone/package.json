@@ -44,6 +44,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
+    "jose": "^5.1.0",
     "wavesurfer.js": "^7.4.3"
   }
 }
